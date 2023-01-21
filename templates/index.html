@@ -1,0 +1,23 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+</head>
+<body>
+    <h1>FizzBuzz</h1>
+    {% for i in range(101) %}
+    <ul>
+        {% if i % 3 == 0 and i % 5 == 0 %}
+        <li>FizzBuzz</li>
+        {% elif i % 3 == 0 %}
+        <li>Fizz</li>
+        {% elif i % 5 == 0 %}
+        <li>Buzz</li>
+        {% else %}
+        <li>{{i}}</li>
+        {% endif %}
+    </ul>
+    {% endfor %}
+</body>
+</html>
